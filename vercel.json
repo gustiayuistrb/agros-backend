@@ -9,7 +9,7 @@
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "api/agros-backend.js"
+        "dest": "/api/agros-backend.js"
       }
     ]
   }
