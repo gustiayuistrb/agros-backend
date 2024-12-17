@@ -1,14 +1,11 @@
 {
   "name": "agros-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/agros-backend.js",
   "scripts": {
+    "start": "node api/agros-backend.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
