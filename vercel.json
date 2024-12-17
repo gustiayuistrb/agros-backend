@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/agros-backend.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "api/agros-backend.js"
+      }
+    ],
+    "env": {
+      "DB_HOST": "localhost",
+      "DB_USER": "root",
+      "DB_PASSWORD": "",
+      "DB_NAME": "agros_indonesia",
+      "JWT_SECRET": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTczNDQzMTAwOSwiaWF0IjoxNzM0NDMxMDA5fQ.Nm0yZGeKeaG6Wim-4khsICCC6sYhlxtnV5c8uT7RcAUt"
+    }
+  }
+  
