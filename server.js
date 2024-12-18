@@ -19,7 +19,6 @@ sequelize.authenticate()
     console.error('Unable to connect to the database:', error);
   });
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json()); 
 app.use('/api/auth', authRoutes);
